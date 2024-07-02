@@ -20,7 +20,7 @@ export class BasePage {
         await this.driver.manage().window().maximize(); 
         if(url) return await this.driver.get(url)
         else if (this.url) return await this.driver.get(this.url)
-        else return Promise.reject('BasePage needs a url in the test or page object'); 
+        else return Promise.reject('https://www.usana.com/ux/dotcom/enu-US/home'); 
     }; 
     async getElement(elementBy: By): Promise<WebElement> {
         await this.driver.wait(until.elementLocated(elementBy)); 

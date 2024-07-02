@@ -3,10 +3,10 @@ import { BasePage } from "./basePage";
 const fs = require('fs');
 
 export class USANA extends BasePage {
-    logIn: By = By.xpath('(//a[text()="Login"])[1]');
-    userName: By = By.xpath('#username');
-    password: By = By.xpath('#password');
-    show: By = By.xpath('.sso-btn');
+    logIn: By = By.id('(//a[text()="Login"])[1]');
+    userName: By = By.id('#username');
+    password: By = By.id('#password');
+    show: By = By.id('.sso-btn');
 
     constructor() {
         super({url:"https://sso.usana.com/enu-US/login"});

@@ -1,6 +1,6 @@
-import { UsanaPage } from "./USANAPage";
+import { USANA } from "./USANAPage";
 
-const Usana = new UsanaPage()
+const Usana = new USANA()
 
 test ('firstTest', async() => {
     await Usana.navigate();
